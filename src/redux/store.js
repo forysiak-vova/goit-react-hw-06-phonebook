@@ -1,7 +1,5 @@
-// import { combineReducers } from "redux";
-// import { composeWithDevTools } from 'redux-devtools-extension';
 import contactReducer from './contacts/contact-reduser'
-import { configureStore, combineReducers} from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import logger from 'redux-logger'
 import {
     persistStore,
@@ -17,7 +15,7 @@ import storage from 'redux-persist/lib/storage'
 // import { applyMiddleware } from 'redux';
 
 const persistConfig = {
-  key: 'contacts',
+  key: 'items',
     storage,
     blacklist: ['filter']
 }

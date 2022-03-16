@@ -12,7 +12,19 @@ const addContacts = createAction('contacts_add', ({ name, number }) => ({
 const deleteContact = createAction('contacts_delete');
 const changeFilter = createAction('change-filter');
 
-export default {addContacts, deleteContact, changeFilter};
+export default { addContacts, deleteContact, changeFilter };
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
