@@ -17,44 +17,7 @@ const contact = createReducer([...concatsReducers], {
 const filter = createReducer('', {
    [actions.changeFilter]: (_, { payload }) => payload
 })
-
-// const contactReducer = combineReducers ({
-//    contact,
-//    filter,
-// });
-
 export default combineReducers ({
    contact,
    filter,
 });
-
-
-
-
-
-
-
-
-// const contact = (state = [], { type, payload }) => {
-  
-//    switch (type) {
-//       case 'contacts_add':
-//          return [...state, payload]
-      
-//       case 'contacts_delete':
-//          return  state.filter(contact => contact.id !== payload)
-
-//       default:
-//          return state;
-//   }
-// }
-
-// const filter = (state = '', { type, payload }) => {
-//    switch (type) {
-//       case 'change-filter':
-//          return payload;
-      
-//       default:
-//          return state;
-//    }
-// }

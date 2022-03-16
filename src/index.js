@@ -6,8 +6,7 @@ import 'modern-normalize/modern-normalize.css';
 import store from './redux/store'
 import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react'
-// import {myAction} from './redux/contacts/contact-action'
-// store.dispatch(myAction(2))
+
 
 ReactDOM.render(
   <React.StrictMode>

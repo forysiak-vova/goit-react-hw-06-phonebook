@@ -12,26 +12,12 @@ import {
     REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'
-// import { applyMiddleware } from 'redux';
 
 const persistConfig = {
   key: 'items',
     storage,
     blacklist: ['filter']
 }
-
-// const rootReduser = combineReducers({
-//    counter: contactReducer,
-// })
-
-// const store = createStore(rootReduser, composeWithDevTools());
-
-// const rootReduser = combineReducers({
-//     counter: persistReducer (persistConfig, contactReducer),
-// });
-
-// const persistedReducer = persistReducer(persistConfig, rootReduser)
-
 const middleware = (getDefaultMiddleware) => getDefaultMiddleware({
     serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
