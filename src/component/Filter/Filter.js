@@ -8,13 +8,13 @@ const Filter = () => {
    const dispatch = useDispatch()
    return (
       <Label>
-        Find contacts by name:
+            Find contacts by name:
          <Input
-         type='text'
+            type='text'
             value={value}
             onChange={(e) => dispatch(changeFil.changeFilter(e.currentTarget.value))}
          />
-</Label>
+      </Label>
    )}
 
 export default Filter;

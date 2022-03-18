@@ -4,8 +4,8 @@ import {ContactName,Item,Button} from './ContactItem.styles'
 function ContactItem({id, name, number, onDeleteContact}) { 
    return (
       <Item>
-               <ContactName> {name}</ContactName>
-         <p>( {number} )</p>
+              <ContactName> {name}</ContactName>
+              <p>( {number} )</p>
               <Button onClick={()=>onDeleteContact(id)}>delete</Button>
       </Item>
 )
@@ -16,7 +16,5 @@ ContactItem.propTypes = {
    number: PropTypes.string.isRequired,
    onDeleteContact: PropTypes.func.isRequired
 
-
-   
 }
 export default ContactItem;
